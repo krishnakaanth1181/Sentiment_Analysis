@@ -22,7 +22,7 @@ def predict():
 
     data = request.get_json()
 
-    reviews = data['reviews']
+    reviews = data['review']
 
     process_review = preprocess(reviews)
 
