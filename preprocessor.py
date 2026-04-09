@@ -1,10 +1,18 @@
 import nltk
 import re
+
+nltk.download("movie_reviews") # Dataset: 2000 labeled IMDB reviews
+nltk.download("stopwords") # Common English words to remove
+nltk.download("wordnet") # Vocabulary for lemmatization
+nltk.download("vader_lexicon")  # VADER Sentiment Dictionary
+nltk.download("punkt") # Tokenizer Rules
+nltk.download("punkt_tab")
+
 from nltk.corpus import movie_reviews, stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-stop_words = stopwords.words("English")
+stop_words = stopwords.words("english")
 lemmatizer = WordNetLemmatizer()
 
 
